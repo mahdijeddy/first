@@ -13,88 +13,458 @@
 </head>
 
 <body>
-<!-- ------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------- -->
 
     <header>
         <!-- ----------------------------navbar --------------------->
-        <nav dir="rtl"  class="navbar py-3  fixed-top  ">
-            
-            <ul   class="navbar-nav d-flex  flex-row  ">
+        <nav dir="rtl" class="navbar py-3  fixed-top  ">
+
+            <ul id="disbtn" class="navbar-nav d-flex  flex-row  ">
                 <li class=" mx-4 nav-item "><a class="text-dark font-weight-bold nav-link" href="#">
-                   <span ><img src="./icon/home.svg" alt="" srcset=""></span>
-                   
-                    صفحه اصلی</a> </li>
-                <li class=" mx-4 nav-item"><a class="text-dark font-weight-bold nav-link" href="#">
-                    <span ><img src="./icon/tag.svg" alt="" srcset=""></span>
-                    تخفیف ها </a> </li>
-                <li class=" mx-4 nav-item"><a class="text-dark font-weight-bold nav-link" href="#">
-                    <span ><img src="./icon/gift.svg" alt="" srcset=""></span>
-                    محصولات پیشنهادی
+                        <span><img src="./icon/home.svg" alt="" srcset=""></span>
+
+                        صفحه اصلی</a> </li>
+
+                <li class=" mx-4 nav-item"><a class="text-dark font-weight-bold nav-link" href="#discount1">
+                        <span><img src="./icon/tag.svg" alt="" srcset=""></span>
+                        تخفیف ها </a> </li>
+
+                <li class=" mx-4 nav-item"><a class="text-dark font-weight-bold nav-link" href="#discount1">
+                        <span><img src="./icon/gift.svg" alt="" srcset=""></span>
+                        محصولات پیشنهادی
                     </a> </li>
-               
-                   
+
+
                 <li class=" mx-4 nav-item"><a class="text-dark font-weight-bold nav-link" href="#">
-                    <span ><img src="./icon/person-add.svg" alt="" srcset=""></span>
-                    عضویت / ورود
+                        <span><img src="./icon/person-add.svg" alt="" srcset=""></span>
+                        عضویت / ورود
                     </a> </li>
             </ul>
-            
+
             <div class="navbar-brand d-flex  ml-5">
-                
-                <a class=" ml-4 text-dark  font-weight-bold" style="text-decoration: none;" href="#">
-                    <span class="badge badge-pill badge-warning">0</span>
-                     <span ><img src="./icon/basket-64.png" alt="" style="width: 26px;" srcset="">
-                    </span>
-                     </a> 
+
+
+                <div class="dropdown">
+                    <a class=" ml-4 text-dark  font-weight-bold" style="text-decoration: none;" data-toggle="dropdown"
+                        href="#">
+                        <span class="badge badge-pill badge-warning">0</span>
+                        <span><img src="./icon/basket-64.png" alt="" style="width: 26px;" srcset="">
+                        </span>
+                    </a>
+                    <div class="dropdown-menu bg-warning">
+                        <a data-toggle="modal" class="dropdown-item" href="#sabad">سبد خرید</a>
+                        <a class="dropdown-item" href="#">جدید</a>
+                        <a class="dropdown-item" data-toggle="modal" href="#sabad-inform">اطلاعیه ها </a>
+                    </div>
+                </div>
                 کفش مهدی
                 <img src="./images/logo.png" style="width: 24px;" alt="">
-               
+
             </div>
 
         </nav>
+
         <!-- ----------------------------------end--navbar-------------------- -->
         <!-- --------------------------------------------header---------------------- -->
 
 
-    
-    <div class="header1 ">
-        <div style="top: 90%;" class="d-flex  w-100 position-absolute">
-            <span class="badge rounded-circle badge-info  p-5 ">
-                <div class="h2">راحت</div>
-            </span>
-            <span class="badge rounded-circle badge-success  p-5 ">
-                <div class="h2">ایمن</div>
-            </span>
-            <span class="badge rounded-circle badge-warning  p-5 ">
-                <div class="h2">بادوام</div>
-            </span>
-            <span class="badge rounded-circle badge-light  p-5 ">
-                <div class="h2">شیک</div>
-            </span>
+
+
+        <div class="header1  ">
+
+            <div style="top: 90%;" class="d-flex  w-100 position-absolute">
+                <span class="badge rounded-circle badge-danger  p-5 ">
+                    <div class="h2">راحت</div>
+                </span>
+                <span class="badge rounded-circle badge-success  p-5 ">
+                    <div class="h2">ایمن</div>
+                </span>
+                <span class="badge rounded-circle badge-warning  p-5 ">
+                    <div class="h2">بادوام</div>
+                </span>
+                <span class="badge rounded-circle badge-light  p-5 ">
+                    <div class="h2">شیک</div>
+                </span>
+            </div>
+
+            <div class=" wew d-flex justify-content-center align-items-center">
+                <span><img style="width:60px ;" src="./icon/verified.svg" alt="" srcset=""></span>
+                <p style="color: rgb(68, 12, 82); font-size: 55px;" class="text-black mx-4  ">فروشگاه کفش مهدی انتخاب
+                    حرفه ای ها</p>
+                <p></p>
+            </div>
+
         </div>
-        <div class=" wew d-flex justify-content-center align-items-center">
-              <span  ><img style="width:60px ;" src="./icon/verified.svg" alt="" srcset=""></span>
-            <p style="color: rgb(68, 12, 82); font-size: 55px;" class="text-black mx-4  ">فروشگاه کفش مهدی انتخاب حرفه ای ها</p>
-            <p></p>
+
+
+        <div id="www" class="">
+            <a href="#qqq" style=" top: 40%;left: 2% ;" class="btt btn position-absolute btn-warning">مشاهده محصولات
+
+            </a>
         </div>
-        
-    </div>
-    <button style=" top: 40%;left: 2% ;" class="btt btn position-absolute btn-warning">دسترسی
-    <span >&rAarr; </span>
-    </button>
+
+
+
+
+
 
     </header>
     <main>
 
-        <div class="in d-flex justify-content-center">
-
-            <img src="./images/1.webp" class="w-75 shadow-lg rounded border-0 " style="opacity: .9;" alt="" srcset="">
+        <!-- <div data-offset="50" data-spy="scroll" data-target="#disbtn" class="in d-flex justify-content-center ">
             
-            <span style=" right:20% " class=" shadow position-absolute" ><img src="./icon/disc.png"  style=" width:200px ;" alt="" srcset=""></span>
-        </div>
-    </main>
+            <img data-spy="scroll" id="discount1" src="./images/1.webp"
+                class="w-75 shadow-lg rounded border-0 jumbotron " style="opacity: 1;" alt="" srcset="">
 
-    
+
+            <span style=" right:20% " class=" shadow position-absolute"><img src="./icon/disc.png"
+                    style=" width:200px ;" alt="" srcset=""></span>
+                    
+        </div> -->
+        <div  data-offset="50" data-spy="scroll" data-target="#disbtn" class="in d-flex justify-content-center ">
+            
+           
+            <div dir="rtl" style="background-image: url(./images/1.webp); background-repeat: no-repeat;background-size:cover" class="w-75 flex-column-reverse justify-content-around d-flex shadow-lg rounded border-0 " data-spy="scroll" id="discount1" >
+                <div class=" align-self-start">
+                    <button class="btn btn-danger border-0 m-5 w-100 font-weight-bold ">بیشتر
+                        <span class="mx-1" ><img  src="./icon/plus.svg" alt=""></span>
+                        </button>
+                </div>
+                <div class=" mx-5 h1 ">
+                    <p class=" text-white "> بهترین هارا با ما تجربه کنید </p>
+                </div>
+            </div>
+            
+
+            <span style=" right:20% " class=" shadow position-absolute"><img src="./icon/disc.png"
+                    style=" width:200px ;" alt="" srcset=""></span>
+                    
+        </div>
+        <!-- -------------------------------------------sabad-- kharid------------------------------------------- -->
+        <div class="row">
+            <div class="col">
+
+                <div class="modal fade" id="sabad" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="sabadLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">سبد خرید</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                سبد شما خالی است
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">بستن</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------------------------sabad-info --------------------- -->
+            <div class="col">
+
+                <div class="modal fade" id="sabad-inform" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"> اطلاعیه</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div style="font-family: 'Vazir';" class="modal-body">
+
+                                چینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مور
+                                د استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+
+                                و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستو
+                                ن و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای م
+
+                                تنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذ
+
+                                شته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها ش
+                                ناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+
+
+                                فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارا
+
+                                ئه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دست
+
+                                اوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاد
+
+                                ه قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با ا
+                                ستفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر
+                                آنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+                                هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال
+
+                                و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بی
+                                شتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان ف
+                                ارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاور
+                                دهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قر
+                                ار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفا
+                                ده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچن
+                                ان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+                                بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آ
+                                ینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
+                                را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                                ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهک
+                                ارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+                                اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گ
+                                یرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده ا
+                                ز طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان ک
+                                ه لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهب
+                                ود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                                شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را ب
+                                رای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجا
+                                د کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها،
+                                و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی،
+                                و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- ---------------------------------------------------- end-sabad--------------------------------- -->
+        <!-- ---------------------------------------------start - mahsoolat---------------------------------------- -->
+
+        <div data-spy="scroll" data-target="#www" class="row   justify-content-center">
+            <div id="qqq" class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex  justify-content-center mt-5">
+                <div class="card " style="width: 18rem; ">
+                    <img src="./images/m1.webp" style="height: 22rem;" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-between">
+                        <h5 class="card-title "> nike ms-hoo23</h5>
+                        <div class="">
+                            <a href="#"> <span><img src="./icon/bookmark-fill.svg" alt=""></span></a>
+                            <a href="#"><span><img src="./icon/heart.svg" alt=""></span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body  text-right">
+                        <p>...کفش مخصوص پیاده روی طولانی مدل</p>
+
+                        <p> <span class=" badge badge-warning p-2 mr-2">nike </span>: برند </p>
+                        <p> <span class=" badge badge-warning p-2 mr-2">850000 t </span>: قیمت </p>
+                        <button class=" w-100  btn btn-danger "> افزودن به سبد خرید</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex  justify-content-center mt-5">
+                <div class="card " style="width: 18rem;">
+                    <img src="./images/m2.webp" style="height: 22rem;" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-between">
+                        <h5 class="card-title "> nike ms-hoo23</h5>
+                        <div class="">
+                            <a href="#"> <span><img src="./icon/bookmark-fill.svg" alt=""></span></a>
+                            <a href="#"><span><img src="./icon/heart.svg" alt=""></span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body  text-right">
+                        <p>...کفش مخصوص پیاده روی طولانی مدل</p>
+
+                        <p> <span class=" badge badge-warning p-2 mr-2">nike </span>: برند </p>
+                        <p> <span class=" badge badge-warning p-2 mr-2">850000 t </span>: قیمت </p>
+                        <button class=" w-100  btn btn-danger "> افزودن به سبد خرید</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex  justify-content-center mt-5">
+                <div class="card " style="width: 18rem;">
+                    <img src="./images/m3.webp" style="height: 22rem;" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-between">
+                        <h5 class="card-title "> nike ms-hoo23</h5>
+                        <div class="">
+                            <a href="#"> <span><img src="./icon/bookmark-fill.svg" alt=""></span></a>
+                            <a href="#"><span><img src="./icon/heart.svg" alt=""></span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body  text-right">
+                        <p>...کفش مخصوص پیاده روی طولانی مدل</p>
+
+                        <p> <span class=" badge badge-warning p-2 mr-2">nike </span>: برند </p>
+                        <p> <span class=" badge badge-warning p-2 mr-2">850000 t </span>: قیمت </p>
+                        <button class=" w-100  btn btn-danger "> افزودن به سبد خرید</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex  justify-content-center mt-5">
+                <div class="card " style="width: 18rem;">
+                    <img src="./images/m4.webp" style="height: 22rem;" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-between">
+                        <h5 class="card-title "> nike ms-hoo23</h5>
+                        <div class="">
+                            <a href="#"> <span><img src="./icon/bookmark-fill.svg" alt=""></span></a>
+                            <a href="#"><span><img src="./icon/heart.svg" alt=""></span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body  text-right">
+                        <p>...کفش مخصوص پیاده روی طولانی مدل</p>
+
+                        <p> <span class=" badge badge-warning p-2 mr-2">nike </span>: برند </p>
+                        <p> <span class=" badge badge-warning p-2 mr-2">850000 t </span>: قیمت </p>
+                        <button class=" w-100  btn btn-danger "> افزودن به سبد خرید</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex  justify-content-center mt-5">
+                <div class="card " style="width: 18rem;">
+                    <img src="./images/m5.webp" style="height: 22rem;" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-between">
+                        <h5 class="card-title "> nike ms-hoo23</h5>
+                        <div class="">
+                            <a href="#"> <span><img src="./icon/bookmark-fill.svg" alt=""></span></a>
+                            <a href="#"><span><img src="./icon/heart.svg" alt=""></span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body  text-right">
+                        <p>...کفش مخصوص پیاده روی طولانی مدل</p>
+
+                        <p> <span class=" badge badge-warning p-2 mr-2">nike </span>: برند </p>
+                        <p> <span class=" badge badge-warning p-2 mr-2">850000 t </span>: قیمت </p>
+                        <button class=" w-100  btn btn-danger "> افزودن به سبد خرید</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex  justify-content-center mt-5">
+                <div class="card " style="width: 18rem;">
+                    <img src="./images/m6.webp" style="height: 22rem;" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-between">
+                        <h5 class="card-title "> nike ms-hoo23</h5>
+                        <div class="">
+                            <a href="#"> <span><img src="./icon/bookmark-fill.svg" alt=""></span></a>
+                            <a href="#"><span><img src="./icon/heart.svg" alt=""></span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body  text-right">
+                        <p>...کفش مخصوص پیاده روی طولانی مدل</p>
+
+                        <p> <span class=" badge badge-warning p-2 mr-2">nike </span>: برند </p>
+                        <p> <span class=" badge badge-warning p-2 mr-2">850000 t </span>: قیمت </p>
+                        <button class=" w-100  btn btn-danger "> افزودن به سبد خرید</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex  justify-content-center mt-5">
+                <div class="card " style="width: 18rem;">
+                    <img src="./images/m7.webp" style="height: 22rem;" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-between">
+                        <h5 class="card-title "> nike ms-hoo23</h5>
+                        <div class="">
+                            <a href="#"> <span><img src="./icon/bookmark-fill.svg" alt=""></span></a>
+                            <a href="#"><span><img src="./icon/heart.svg" alt=""></span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body  text-right">
+                        <p>...کفش مخصوص پیاده روی طولانی مدل</p>
+
+                        <p> <span class=" badge badge-warning p-2 mr-2">nike </span>: برند </p>
+                        <p> <span class=" badge badge-warning p-2 mr-2">850000 t </span>: قیمت </p>
+                        <button class=" w-100  btn btn-danger "> افزودن به سبد خرید</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex  justify-content-center mt-5">
+                <div class="card " style="width: 18rem;">
+                    <img src="./images/m8.webp" style="height: 22rem;" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex justify-content-between">
+                        <h5 class="card-title "> nike ms-hoo23</h5>
+                        <div class="">
+                            <a href="#"> <span><img src="./icon/bookmark-fill.svg" alt=""></span></a>
+                            <a href="#"><span><img src="./icon/heart.svg" alt=""></span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body  text-right">
+                        <p>...کفش مخصوص پیاده روی طولانی مدل</p>
+
+                        <p> <span class=" badge badge-warning p-2 mr-2">nike </span>: برند </p>
+                        <p> <span class=" badge badge-warning p-2 mr-2">850000 t </span>: قیمت </p>
+                        <button class=" w-100  btn btn-danger "> افزودن به سبد خرید</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <nav class="my-5">
+                <ul class="pagination">
+                    <li class=" mx-2 page-item"><a class="page-link" href="#">قبلی</a></li>
+                    <li class=" mx-2 page-item active"><a class="page-link " href="#">1</a></li>
+                    <li class=" mx-2 page-item"><a class="page-link" href="#">2</a></li>
+                    <li class=" mx-2 page-item"><a class="page-link" href="#">3</a></li>
+                    <li class=" mx-2 page-item disabled"><a class="page-link" href="#">...</a></li>
+                    <li class=" mx-2 page-item"><a class="page-link" href="#">10</a></li>
+                    <li class=" mx-2 page-item"><a class="page-link" href="#">بعدی</a></li>
+                </ul>
+            </nav>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div class=""> </div>
+            </div>
+        </div>
+    </footer>
+
+
 
 
 
@@ -105,7 +475,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-        <script src="./script.js/scrip.js"></script>
+    <script src="./script.js/btstrap.js"></script>
+
+
+    <script src="./script.js/scrip.js"></script>
+
 </body>
 
 
