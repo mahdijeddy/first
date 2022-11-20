@@ -1,6 +1,6 @@
 @font-face {
   font-family: tahoma;
-  src: url(../fonts/tahoma/Roboto-Medium.ttf) format("ttf");
+  src: url(../fonts/tahoma/Roboto-Medium.ttf) format("ttf"),;
   font-style: normal;
   font-weight: 400;
 }
@@ -13,18 +13,23 @@
 }
 @font-face {
   font-family: tahoma;
+  src: url(../fonts/tahoma/Roboto-Bold.ttf) format('ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: tahoma;
   src: url(../fonts/tahoma/Roboto-Thin.ttf) format("ttf");
   font-style: normal;
-  font-weight: 100;
+  font-weight: lighter;
 }
 @font-face {
     font-family: Vazir;
-    src: url(../fonts/vazirFarsi/Vazir-Thin-FD-WOL.eot) format("eot"),
-    url(../fonts/vazirFarsi/Vazir-Thin-FD-WOL.woff2) format("woff2"),
-    url(../fonts/vazirFarsi/Vazir-Thin-FD-WOL.woff) format("woff"),
-    url(../fonts/vazirFarsi/Vazir-Thin-FD-WOL.ttf) format("ttf") ;
+    src: url(../fonts/vazirFarsi/Vazir-Medium-FD-WOL.eot) format("eot"),
+    url(../fonts/vazirFarsi/Vazir-Medium-FD-WOL.eot-FD-WOL.woff2) format("woff2"),
+    url(../fonts/vazirFarsi/Vazir-Medium-FD-WOL.eot-FD-WOL.woff) format("woff"),
+    url(../fonts/vazirFarsi/Vazir-Medium-FD-WOL.eot-FD-WOL.ttf) format("ttf") ;
     font-style: normal;
-    font-weight: 100;
+    font-weight: normal;
 }
 @font-face {
     font-family: Vazir;

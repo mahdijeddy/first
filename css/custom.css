@@ -56,9 +56,9 @@
 
 footer{
   width: 100%;
-  height: 600px;
+  height: auto;
   background-color: rgb(218, 203, 202);
-  background: linear-gradient(to top , rgba(194, 110, 0, 0.712), rgba(182, 168, 46, 0.678) ,rgba(214, 228, 92, 0.527));
-  box-shadow: 15px 0px 0px 0px rgb(0, 0, 0);
+  background: linear-gradient(to top, rgb(0, 0, 0),rgb(46, 45, 45),rgb(46, 45, 45),rgb(90, 90, 85)  );
+ 
   
 }

@@ -17,9 +17,13 @@
 
     <header>
         <!-- ----------------------------navbar --------------------->
-        <nav dir="rtl" class="navbar py-3  fixed-top  ">
+        <nav dir="rtl" class="navbar navbar-expand-lg py-3  fixed-top  ">
+            <button data-toggle="collapse" data-target="#nav-collapase" class="navbar-toggler  bg-danger navbar-dark  ">
+                <span class="  navbar-toggler-icon"></span>
+            </button>
 
-            <ul id="disbtn" class="navbar-nav d-flex  flex-row  ">
+            <div id="nav-collapase" class="collapse navbar-collapse ">
+                <ul id="disbtn" class="navbar-nav  d-flex  flex-sm-row align-items-start  flex-column ">
                 <li class=" mx-4 nav-item "><a class="text-dark font-weight-bold nav-link" href="#">
                         <span><img src="./icon/home.svg" alt="" srcset=""></span>
 
@@ -39,9 +43,9 @@
                         <span><img src="./icon/person-add.svg" alt="" srcset=""></span>
                         عضویت / ورود
                     </a> </li>
-            </ul>
+            </ul></div>
 
-            <div class="navbar-brand d-flex  ml-5">
+            <div class="navbar-brand d-flex mt-2 mt-lg-0  ml-5">
 
 
                 <div class="dropdown">
@@ -72,7 +76,7 @@
 
         <div class="header1  ">
 
-            <div style="top: 90%;" class="d-flex  w-100 position-absolute">
+            <div style="top: 90%;" class="d-lg-flex d-none  w-100 position-absolute">
                 <span class="badge rounded-circle badge-danger  p-5 ">
                     <div class="h2">راحت</div>
                 </span>
@@ -98,7 +102,7 @@
 
 
         <div id="www" class="">
-            <a href="#qqq" style=" top: 40%;left: 2% ;" class="btt btn position-absolute btn-warning">مشاهده محصولات
+            <a href="#qqq" style=" top: 35%;left: 2% ; opacity: .9;" class="btt btn position-absolute btn-warning">مشاهده محصولات
 
             </a>
         </div>
@@ -111,34 +115,27 @@
     </header>
     <main>
 
-        <!-- <div data-offset="50" data-spy="scroll" data-target="#disbtn" class="in d-flex justify-content-center ">
-            
-            <img data-spy="scroll" id="discount1" src="./images/1.webp"
-                class="w-75 shadow-lg rounded border-0 jumbotron " style="opacity: 1;" alt="" srcset="">
+        <div data-offset="50" data-spy="scroll" data-target="#disbtn" class="in d-lg-flex justify-content-center d-none  ">
 
 
-            <span style=" right:20% " class=" shadow position-absolute"><img src="./icon/disc.png"
-                    style=" width:200px ;" alt="" srcset=""></span>
-                    
-        </div> -->
-        <div  data-offset="50" data-spy="scroll" data-target="#disbtn" class="in d-flex justify-content-center ">
-            
-           
-            <div dir="rtl" style="background-image: url(./images/1.webp); background-repeat: no-repeat;background-size:cover" class="w-75 flex-column-reverse justify-content-around d-flex shadow-lg rounded border-0 " data-spy="scroll" id="discount1" >
+            <div dir="rtl"
+                style="background-image: url(./images/1.webp); background-repeat: no-repeat;background-size:cover; background-position: center;"
+                class="w-75 flex-column-reverse justify-content-around d-flex shadow-lg rounded border-0 "
+                data-spy="scroll" id="discount1">
                 <div class=" align-self-start">
                     <button class="btn btn-danger border-0 m-5 w-100 font-weight-bold ">بیشتر
-                        <span class="mx-1" ><img  src="./icon/plus.svg" alt=""></span>
-                        </button>
+                        <span class="mx-1"><img src="./icon/plus.svg" alt=""></span>
+                    </button>
                 </div>
                 <div class=" mx-5 h1 ">
                     <p class=" text-white "> بهترین هارا با ما تجربه کنید </p>
                 </div>
             </div>
-            
+
 
             <span style=" right:20% " class=" shadow position-absolute"><img src="./icon/disc.png"
                     style=" width:200px ;" alt="" srcset=""></span>
-                    
+
         </div>
         <!-- -------------------------------------------sabad-- kharid------------------------------------------- -->
         <div class="row">
@@ -457,10 +454,49 @@
 
     </main>
     <footer>
-        <div class="row">
-            <div class="col">
-                <div class=""> </div>
+        <div class="row h-100">
+            <div class="col-12 order-2 my-4 order-md-0  col-lg-4 d-flex flex-nowrap flex-md-wrap  ">
+                <div class="flex-lg-grow-0 flex-grow-1 ">
+                    <a class="text-warning btn" href="#"> ارتباط با ما</a>
+                </div>
+                <div class="flex-lg-grow-0 flex-grow-1">
+                    <a class="text-warning btn" href="#"> درباره ما</a>
+                </div>
+                <div class="flex-lg-grow-0 flex-grow-1 mx-2">
+                    <a class="text-warning btn" href="#">پشتیبانی</a>
+                </div>
+                <div class="mx-2 flex-lg-grow-0 flex-grow-1">
+                    <a class="text-warning btn" href="#">واحد فروش</a>
+                </div>
+                <div class="flex-lg-grow-0 flex-grow-1">
+                    <a class="text-warning btn" href="#">انتقادات و شکایات مشتریان</a>
+                </div>
             </div>
+            <div
+                class="col-12  order-3 order-md-0 col-lg-4 d-flex my-4 flex-column justify-content-around align-items-center h-75 ">
+                <div class="text-white-50 h4">مارا در شبکه های زیر دنبال کنید</div>
+                <div class="icons d-flex  ">
+                    <div class=" mx-2  "><a href="#"> <img src="./icon/instagram-64.png"> </a></div>
+                    <div class=" mx-2  "><a href="#"> <img src="./icon/twitter-64.png"> </a></div>
+                    <div class=" mx-2  "><a href="#"> <img src="./icon/telegram-64.png"> </a></div>
+                    <div class=" mx-2  "><a href="#"> <img src="./icon/facebook-64.png"> </a></div>
+                </div>
+            </div>
+            <div class="col-12 order-1 order-md-0 col-lg-4 h-100">
+
+                <form class="d-flex flex-column h-75   text-right mx-5 justify-content-center">
+                    <label class="text text-white align-items-center h4">عضویت در خبر نامه
+                    </label>
+                    <div class="form-group text-right">
+                        <label class="text text-white-50 ">ادرس ایمیل</label>
+                        <input class="form-control">
+                    </div>
+                    <button type="submit" class="btn w-25 align-self-md-end  px-5 btn-warning ">ثبت</button>
+                </form>
+
+
+            </div>
+
         </div>
     </footer>
 
