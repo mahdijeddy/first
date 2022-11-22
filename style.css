@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header-img{
+
+.header-img {
     background-image: url(./images/pexels-olga-1153655.jpg);
     background-size: cover;
     background-position: center;
@@ -12,124 +13,163 @@
     position: absolute;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     border: none;
+    animation: anm3 5s ease-in;
     
+
 }
+
 .header {
     width: 100%;
     height: 90vh;
     z-index: 2;
     display: flex;
-   /* background: linear-gradient(to top , rgb(95, 89, 89),rgb(120, 119, 119)); */
+    /* background: linear-gradient(to top , rgb(95, 89, 89),rgb(120, 119, 119)); */
     font-family: 'Alexandria', sans-serif;
     font-family: 'Noto Sans Arabic', sans-serif;
     font-family: 'Rubik Distressed', cursive;
     background:
-	linear-gradient(
-		rgb(42, 65, 65),
-		transparent
-	),
-	linear-gradient(
-		45deg,
-		rgb(110, 53, 110),
-		transparent
-	),
-	linear-gradient(
-		-45deg,
-		rgb(25, 58, 35),
-		transparent
-	);
-background-blend-mode: multiply;
-	
+        linear-gradient(rgb(42, 65, 65),
+            transparent),
+        linear-gradient(45deg,
+            rgb(110, 53, 110),
+            transparent),
+        linear-gradient(-45deg,
+            rgb(25, 58, 35),
+            transparent);
+    background-blend-mode: multiply;
+
 }
-.navbar{
+
+.navbar {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
     width: 100%;
     height: 15vh;
     position: absolute;
     z-index: 3;
-    
-   
+    backdrop-filter: blur(2px);
+    box-shadow: 1px 1px rgb(35, 118, 190);
+    animation: anm2 3s ease-out;
     
 }
-.right{
+
+.right {
     width: 50%;
     height: 100%;
+
 }
-.right ul{
+
+.right ul {
     padding: 0px 25px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.right ul li{
+
+.right ul li {
     list-style: none;
     margin: 0 20px;
     flex-grow: 1;
-    padding: 15px;
-    border-radius: 6px;
+
+
 
 }
-.right ul li a{
+
+.right ul li a {
     text-decoration: none;
     font-size: 20px;
     color: rgb(251, 251, 251);
-   
+    padding: 15px;
+    border-radius: 6px;
+    transition: .3s;
+
 }
-.left{
+
+
+.right ul button {
+    all: unset;
+    font-size: 24px;
+    font-family: 'Rubik Distressed', cursive;
+    width: 140px;
+    height: 50px;
+    padding: 6px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(45deg , rgba(21, 157, 206, 0.902) ,rgba(2, 92, 161, 0.926));
+}
+.right ul button:hover{
+    background: linear-gradient(45deg , rgb(7, 137, 185) ,rgb(5, 129, 183));
+}
+
+.left {
     width: 50%;
     height: 100%;
-   display: flex;
-   justify-content: start;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
 }
-.left h1{
-    width: 50px;
+
+
+.left h1,
+.left h2 {
+    width: 100px;
     margin: 0px 30px;
-    color: beige;
+    color: rgb(10, 104, 100);
 }
-.right ul li a:hover{
-    
-    color: rgb(46, 41, 41);
-   
-}
-.right ul li:hover{
+
+
+.right ul li a:hover {
     background-color: rgb(202, 202, 202);
-   
-   
+    color: rgb(65, 65, 65);
+
+
 }
-.main-header{
+
+.main-header {
     width: 100%;
     height: calc(90vh - 15vh);
     align-self: flex-end;
     display: flex;
-    justify-content: center;flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 
 }
-.top{
+
+.top {
     height: 50%;
     width: 100%;
-}
-.bottom{
+    clip-path: circle(9.8% at 0 82%);
+    background-color: rgb(13, 23, 23);
    
+}
+
+.bottom {
+
     height: 50%;
     width: 100%;
 }
-.bottom :nth-child(1){
+
+.bottom :nth-child(1) {
     z-index: 99;
     width: 370px;
     position: absolute;
     right: 8%;
     bottom: 10%;
     z-index: 4;
+    animation: anm4 7s ease;
 }
-.bottom :nth-child(2){
+
+.bottom :nth-child(2) {
     z-index: 99;
     width: 500px;
     position: absolute;
@@ -137,36 +177,97 @@ background-blend-mode: multiply;
     bottom: 4%;
     z-index: 4;
 }
-.bottom :nth-child(3){
-    z-index: 99; width: 650px; position: absolute;
+
+.bottom :nth-child(3) {
+    z-index: 99;
+    width: 650px;
+    position: absolute;
     right: 5%;
     bottom: 10%;
     z-index: 2;
-}.bottom :nth-child(4){
-    z-index: 99;width: 350px; position: absolute;
+}
+
+.bottom :nth-child(4) {
+    z-index: 99;
+    width: 350px;
+    position: absolute;
     right: 3%;
     bottom: 10%;
     z-index: 4;
-}.bottom :nth-child(5){
-    z-index: 99;width: 350px; position: absolute;
+}
+
+.bottom :nth-child(5) {
+    z-index: 99;
+    width: 350px;
+    position: absolute;
     right: 5%;
     bottom: 10%;
     z-index: 3;
-}.bottom :nth-child(6){
-    z-index: 99;width: 650px; position: absolute;
+}
+
+.bottom :nth-child(6) {
+    z-index: 99;
+    width: 650px;
+    position: absolute;
     right: 0%;
     bottom: 12%;
     z-index: 2;
 }
-.top{
+
+.top {
     height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    animation-name: anm1;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
 
 }
-.top img{
-    width: 60px;
+
+.top img {
+    width: 40px;
     margin: 0px 10px;
+}
+
+/* --------------------------animation */
+@keyframes anm1 {
+    0%{
+        transform: translateX(-240px);
+
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes anm2 {
+    0%{transform: translateY(-20px);
+        filter: grayscale(100%);}
+    90%{
+        transform: translateY(+10px);
+        filter: grayscale(95%);
+    }
+    100%{transform: translateY(0px);
+        filter: grayscale(0%);
+    }
+}
+@keyframes anm3 {
+    0%{
+       filter: blur(40px);
+        }
+    100%{
+       filter: blur(0);
+       }
+    
+}
+@keyframes anm4 {
+    0%{
+        transform: translateX(500px);
+
+    }
+    100%{
+        transform: translatex(0px);
+    }
+    
 }
