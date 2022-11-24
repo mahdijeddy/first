@@ -1,2 +1,2 @@
 # first
-### in this files im tryed to design an header for own practices
+### this is a simple site for lithle compony 
