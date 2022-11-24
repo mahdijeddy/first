@@ -1,2 +1,2 @@
 # first
-### this is a simple site for lithle compony 
+### this is a simple site for litthle compony 
